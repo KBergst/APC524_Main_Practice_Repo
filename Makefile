@@ -1,15 +1,14 @@
-CXX = g++
 CXXFLAGS = -g -Wall -std=c++17
 
 ALL = hello
 
-all: $(ALL)
+all : $(ALL)
 
-hello: hello.cc Makefile
-    $(CXX) $(CXXFLAGS) -o $@ $@.cc
+hello : hello.cc
+    $(CXX) $(CXXFLAGS) -o hello hello.cc
 
-clean:
+clean :
     $(RM) $(ALL) *.o
 
-test: all
+test : all
     bash test
