@@ -10,5 +10,5 @@ hello : hello.cc
 clean :
     $(RM) $(ALL) *.o
 
-test : all
+test :
     bash test
