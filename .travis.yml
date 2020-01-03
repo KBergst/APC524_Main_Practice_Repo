@@ -5,8 +5,8 @@ matrix:
       script:
       - python -c "print('Hi from Python!')"
     
-    - language: cpp
-      compiler: gcc
-      script:
-      - make
-      - make Test
+    # - language: cpp
+    #   compiler: gcc
+    #   script:
+    #   - make
+    #   - make Test
